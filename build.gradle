@@ -1,0 +1,13 @@
+group 'mpietrosian'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    task hello {
+        doFirst { task ->
+            println "Start task $task.name on project $task.project.name"
+        }
+    }
+}
+
+
+
