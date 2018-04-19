@@ -27,5 +27,5 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile("junit:junit")
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
 }
