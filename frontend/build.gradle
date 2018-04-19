@@ -1,2 +1,35 @@
 version '1.0-SNAPSHOT'
 
+ext {
+    isWindows = org.gradle.internal.os.OperatingSystem.current().windows
+}
+
+task install() {
+    if (isWindows) {
+        exec {
+            commandLine 'cmd', '/c', 'npm', 'install'
+        }
+    } else {
+        exec {
+            commandLine 'npm', 'install'
+        }
+    }
+}
+
+task clean {
+    delete 'build'
+}
+
+task build {
+    doLast {
+        if (isWindows) {
+            exec {
+                commandLine 'cmd', '/c', 'npm', 'run-script', 'build'
+            }
+        } else {
+            exec {
+                commandLine 'npm', 'run-script', 'build'
+            }
+        }
+    }
+}
