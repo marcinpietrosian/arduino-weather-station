@@ -1,3 +1,4 @@
+/*
 version '1.0-SNAPSHOT'
 
 // This line will import the tasks defined on the arduino.gradle file. Don't remove it.
@@ -10,4 +11,4 @@ sketchMainFile = "src/main/WeatherStationSoftware.cpp"
 cpuName = "atmega328p"
 
 // Clock speed of the board
-cpuClock = "16000000L"
+cpuClock = "16000000L"*/
