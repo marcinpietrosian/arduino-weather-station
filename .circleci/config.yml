@@ -39,8 +39,8 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: gradle test
       - run: sonarqube -Dsonar.organization=marcinpietrosian-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ac59048627e3ccca6eb317bf907f5bba3781234e
+      - run: gradle test
 
 
 
