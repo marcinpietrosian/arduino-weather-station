@@ -1,9 +1,11 @@
-package mpietrosian.backend.implementation
+import mpietrosian.backend.Application
+import org.springframework.boot.test.context.SpringBootTest
+import spock.lang.*
 
-class ApiV0BeanTest extends spock.lang.Specification {
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
 
-    def "fail_test" (){
-        expect: 
-        1 + 1 == 3
-    }
+@SpringBootTest(classes = Application.class, webEnvironment = RANDOM_PORT)
+class ApiV0BeanTest extends Specification {
+
+
 }
