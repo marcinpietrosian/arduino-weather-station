@@ -5,5 +5,5 @@ package mpietrosian.backend.definition;
  */
 public class ApiV0 {
 
-    
+
 }

@@ -27,7 +27,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile     'org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE'
+    compile     "org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE"
     compile     'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 
 
