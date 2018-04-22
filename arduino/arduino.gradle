@@ -1,5 +1,4 @@
-/*
-import com.sun.jna.platform.win32.Kernel32;
+/* import com.sun.jna.platform.win32.Kernel32;
 import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
 import java.io.BufferedReader;
@@ -316,4 +315,4 @@ task upload(dependsOn: build) << {
 
 task clean << {
     ant.delete(dir: buildDir)
-}*/
+} */

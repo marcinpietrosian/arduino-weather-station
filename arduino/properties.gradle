@@ -1,6 +1,5 @@
-/*
-// Path to the Arduino IDE instalation.
+/* // Path to the Arduino IDE instalation.
 arduinoDir = "C:\\Path\\To\\Your\\Arduino\\Installation\\"
 
 // Com port used to communicate with Arduino
-comPort = "COM1"*/
+comPort = "COM1" */
