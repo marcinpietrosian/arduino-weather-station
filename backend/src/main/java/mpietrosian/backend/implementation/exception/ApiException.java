@@ -29,6 +29,6 @@ public class ApiException extends Exception {
         return status;
     }
 
-    public final static ApiException NOT_IMPLEMENTED = new ApiException("Not implemented in this version",
+    public static final ApiException NOT_IMPLEMENTED = new ApiException("Not implemented in this version",
             HttpStatus.NOT_IMPLEMENTED);
 }

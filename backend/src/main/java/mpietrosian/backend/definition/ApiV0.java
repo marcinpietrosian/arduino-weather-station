@@ -13,7 +13,7 @@ import mpietrosian.backend.implementation.exception.ApiException;
  */
 
 @RequestMapping("/api/v1")
-public abstract class ApiV0 {
+public interface ApiV0 {
 
     @RequestMapping(
         value="status/arduino",

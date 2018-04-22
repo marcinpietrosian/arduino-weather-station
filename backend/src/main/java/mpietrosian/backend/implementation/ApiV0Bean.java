@@ -1,7 +1,6 @@
 package mpietrosian.backend.implementation;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import io.swagger.annotations.ApiOperation;
@@ -12,7 +11,7 @@ import mpietrosian.backend.implementation.exception.ApiException;
 /**
  * Created by mpietrosian on 19.04.2018.
  */
-public class ApiV0Bean extends ApiV0{
+public class ApiV0Bean implements ApiV0{
 
     @Override
     @ApiOperation(value = "Gets current weather data", response = ResponseEntity.class, 
