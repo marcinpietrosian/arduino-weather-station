@@ -3,3 +3,6 @@
 .idea
 
 /backend/build
+.settings
+.vscode
+.project

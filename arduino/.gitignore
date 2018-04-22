@@ -2,3 +2,6 @@ arduino.gradle
 build.gradle
 properties.gradle
 settings.gradle
+
+.settings
+.vscode
