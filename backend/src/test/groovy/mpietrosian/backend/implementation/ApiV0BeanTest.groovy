@@ -1,8 +1,13 @@
+package mpietrosian.backend.implementation
+
 import mpietrosian.backend.Application
 import groovyx.net.http.RESTClient
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.web.server.LocalServerPort
 import spock.lang.*
+import io.restassured.RestAssured;
+
+import static io.restassured.RestAssured.*
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
 
@@ -14,10 +19,19 @@ class ApiV0BeanTest extends Specification {
 
     String serverHost = "localhost"
 
-    RESTClient restClient = new RESTClient(serverHost + ":" + serverPort, JSON)
 
-    def "return current weather" () {
-        def response = restClient.get()
+    def "get current weather" () {
+        RestAssured.port = serverPort;
+
+        given:
+        def request = given()
+
+        when:
+        def response = request.with().get("/api/v1/services")
+        
+        then:
+        response.statusCode == 404
+        
     }
 
 
