@@ -32,6 +32,13 @@ public interface ApiV0 {
         produces="application/json",
         method=RequestMethod.GET)
     public abstract ResponseEntity getArduinoRawData() throws ApiException;
+
+    @RequestMapping(
+        value="data/arduino",
+        produces="application/json",
+        method=RequestMethod.POST)
+    public abstract ResponseEntity setArduinoConfig() throws ApiException;
+
     
     @RequestMapping(
         value="data/weather/current",

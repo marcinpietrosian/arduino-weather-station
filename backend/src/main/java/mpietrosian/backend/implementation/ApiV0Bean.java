@@ -55,7 +55,7 @@ public class ApiV0Bean implements ApiV0{
     @Override
     @ApiOperation(value = "Gets fitbit data collected today", response = ResponseEntity.class, 
             notes = "Provides data collected by fitbit this day, including sleep data from last night, if collected")
-	public ResponseEntity getFitbitTodayData() throws ApiException {
+        public ResponseEntity getFitbitTodayData() throws ApiException {
 		return null;
     }
 
@@ -77,6 +77,11 @@ public class ApiV0Bean implements ApiV0{
     @ApiOperation(value = "Gets current raw data", response = ResponseEntity.class, 
             notes = "Provides cached raw data directly from Arduino")
 	public ResponseEntity getArduinoRawData() throws ApiException {
+		return null;
+	}
+
+	@Override
+	public ResponseEntity setArduinoConfig() throws ApiException {
 		return null;
 	}
     
