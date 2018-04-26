@@ -15,67 +15,40 @@ import mpietrosian.backend.implementation.exception.ApiException;
 @RequestMapping("/api/v1")
 public interface ApiV0 {
 
-    @RequestMapping(
-        value="status/arduino",
-        produces="application/json",
-        method=RequestMethod.GET)
+    @RequestMapping(value = "status/arduino", produces = "application/json", method = RequestMethod.GET)
     public abstract ResponseEntity getArduinoStatus() throws ApiException;
 
-    @RequestMapping(
-        value="status/server",
-        produces="application/json",
-        method=RequestMethod.GET)
+    @RequestMapping(value = "status/server", produces = "application/json", method = RequestMethod.GET)
     public abstract ResponseEntity getServerStatus() throws ApiException;
 
-    @RequestMapping(
-        value="data/arduino",
-        produces="application/json",
-        method=RequestMethod.GET)
+    @RequestMapping(value = "data/arduino", produces = "application/json", method = RequestMethod.GET)
     public abstract ResponseEntity getArduinoRawData() throws ApiException;
 
-    @RequestMapping(
-        value="data/arduino",
-        produces="application/json",
-        method=RequestMethod.POST)
+    @RequestMapping(value = "data/arduino", produces = "application/json", method = RequestMethod.POST)
     public abstract ResponseEntity setArduinoConfig() throws ApiException;
 
-    
-    @RequestMapping(
-        value="data/weather/current",
-        produces="application/json",
-        method=RequestMethod.GET)
+    @RequestMapping(value = "data/weather/current", produces = "application/json", method = RequestMethod.GET)
     public abstract ResponseEntity getCurrentWeather() throws ApiException;
 
-    @RequestMapping(
-        value="data/weather",
-        produces="application/json",
-        method=RequestMethod.GET)
-    public abstract ResponseEntity getWeather(@RequestParam(value="query", required=true) long from, @RequestParam(value="query", required=true) long to) throws ApiException;
+    @RequestMapping(value = "data/weather", produces = "application/json", method = RequestMethod.GET)
+    public abstract ResponseEntity getWeather(@RequestParam(value = "query", required = true) long from,
+            @RequestParam(value = "query", required = true) long to) throws ApiException;
 
-    @RequestMapping(
-        value="data/weather/{label}",
-        produces="application/json",
-        method=RequestMethod.GET)
-    public abstract ResponseEntity getWeatherByLabel(@PathVariable String label, @RequestParam(value="query", required=true) long from, @RequestParam(value="query", required=true) long to) throws ApiException;
+    @RequestMapping(value = "data/weather/{label}", produces = "application/json", method = RequestMethod.GET)
+    public abstract ResponseEntity getWeatherByLabel(@PathVariable String label,
+            @RequestParam(value = "query", required = true) long from,
+            @RequestParam(value = "query", required = true) long to) throws ApiException;
 
-    @RequestMapping(
-        value="data/fitbit",
-        produces="application/json",
-        method=RequestMethod.GET)
-    public abstract ResponseEntity getFitbitData(@RequestParam(value="query", required=true) long from, @RequestParam(value="query", required=true) long to) throws ApiException;
+    @RequestMapping(value = "data/fitbit", produces = "application/json", method = RequestMethod.GET)
+    public abstract ResponseEntity getFitbitData(@RequestParam(value = "query", required = true) long from,
+            @RequestParam(value = "query", required = true) long to) throws ApiException;
 
-    @RequestMapping(
-        value="data/fitbit/{label}",
-        produces="application/json",
-        method=RequestMethod.GET)
-    public abstract ResponseEntity getFitbitDataByLabel(@PathVariable String label, @RequestParam(value="query", required=true) long from, @RequestParam(value="query", required=true) long to) throws ApiException;
+    @RequestMapping(value = "data/fitbit/{label}", produces = "application/json", method = RequestMethod.GET)
+    public abstract ResponseEntity getFitbitDataByLabel(@PathVariable String label,
+            @RequestParam(value = "query", required = true) long from,
+            @RequestParam(value = "query", required = true) long to) throws ApiException;
 
-    @RequestMapping(
-        value="data/fitbit/today",
-        produces="application/json",
-        method=RequestMethod.GET)
+    @RequestMapping(value = "data/fitbit/today", produces = "application/json", method = RequestMethod.GET)
     public abstract ResponseEntity getFitbitTodayData() throws ApiException;
-
-    
 
 }

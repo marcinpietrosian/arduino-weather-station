@@ -8,14 +8,13 @@ import mpietrosian.backend.implementation.services.arduino.ArduinoService;
 
 public class ArduinoServiceImpl implements ArduinoService {
 
-
 	@Override
-	public void setConfig(ArduinoStatusRequest request) throws ApiException,  ArduinoConnectionException{
-		
+	public void setConfig(ArduinoStatusRequest request) throws ApiException, ArduinoConnectionException {
+
 	}
 
 	@Override
-	public ArduinoStatusResponse getStatus() throws ApiException,  ArduinoConnectionException {
+	public ArduinoStatusResponse getStatus() throws ApiException, ArduinoConnectionException {
 		return null;
 	}
 

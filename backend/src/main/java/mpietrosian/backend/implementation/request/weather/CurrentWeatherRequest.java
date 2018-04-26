@@ -1,7 +1,4 @@
-package mpietrosian.backend.implementation.request;
+package mpietrosian.backend.implementation.request.weather;
 
-/**
- * Created by mpietrosian on 19.04.2018.
- */
 public class CurrentWeatherRequest {
 }

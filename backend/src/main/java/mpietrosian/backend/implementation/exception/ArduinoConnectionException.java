@@ -1,5 +1,5 @@
 package mpietrosian.backend.implementation.exception;
 
-public class  ArduinoConnectionException extends Exception {
-    
+public class ArduinoConnectionException extends Exception {
+
 }
