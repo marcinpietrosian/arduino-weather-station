@@ -1,4 +1,4 @@
 package mpietrosian.backend.implementation.response.weather;
 
-public class CurrentWeatherResponse {
+public class SingleWeatherResponse {
 }
